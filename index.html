@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center relative pt-40">
+
+
+
+    <div class="absolute top-2 left-1 w-20 h-10 p-3 fixed">
+        <img src="./icon.png">
+    </div>
+
+
+
+    <div class="bg-white rounded-2xl grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl shadow-2xl overflow-hidden">
+        <div class="p-10">
+
+
+
+
+            <!--left form-->
+            <h1 class="text-3xl font-bold text-center mb-8">Sign in</h1>
+            <form class="space-y-5">
+
+                <div>
+                    <label class="font-sm font-bold">Name</label>
+
+                    <input type="text" placeholder="Your name" id="namebox"
+                        class="border w-full rounded-lg p-3 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+
+                    <p class="text-sm text-red-500 mt-1 hidden" id="nameerror">Name is required</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div>
+                    <label class="font-sm font-bold">Email</label>
+
+                    <input type="email" placeholder="example@gmail.com" id="emailbox"
+                        class="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+                    <p class="text-sm text-red-500 mt-1 hidden" id="emailerror">Enter a valid email address</p>
+
+                </div>
+
+
+                <div>
+                    <label class="font-sm font-bold">Password</label>
+
+                    <input type="password" placeholder="......" id="passwordbox"
+                        class="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+
+                    <p class="text-sm text-red-500 mt-1 hidden" id="passworderror">Password must be at least 6
+                        characters</p>
+
+                </div>
+
+
+                <div>
+                    <label class="font-sm font-bold">Confirm Password</label>
+                    <input type="password" id="confirmbox" placeholder="......"
+                        class="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+
+                    <p class="text-sm text-red-500 mt-1 hidden" id="confirmerror">Passwords do not match</p>
+                </div>
+
+                <button type="button" id="registerbtn"
+                    class="font-sm font-bold w-full bg-blue-600 p-3 mt-4 rounded-lg text-white opacity-50 cursor-not-allowed">Register
+                </button>
+
+
+                <p class="text-center text-sm">Already have an account? <span
+                        class="font-medium text-blue-600 cursor-pointer">Sign In</span>
+
+                <div
+                    class="rounded-lg py-3 m-3 border flex gap-2 items-center justify-center hover:bg-gray-100 cursor-pointer">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5">
+                    <p class="font-bold text-center">Continue with Google</p>
+                </div>
+
+
+
+            </form>
+
+            <!--msg-->
+            <div id="msg"
+                class="bg-gray-700 text-white text-sm font-semibold rounded-full px-4 py-3 fixed bottom-10 left-1/2 hidden">
+                Welcome to EMC</div>
+
+
+        </div>
+
+
+
+        <!--right-->
+        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center p-10">
+            <div class="text-center rounded-xl text-white bg-white/30 backdrop-blur-md p-6">
+                <p class="text-lg font-medium">
+                    “The MERN course at EMC exceeded my expectations in every way.”
+                </p>
+                <div class="flex items-center justify-center mt-4 py-3 flex-col">
+                    <img src="https://i.pravatar.cc/100" class="rounded-full w-14 h-14 border border-2">
+                    <span class="font-semibold mt-2">Angel D.</span>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
